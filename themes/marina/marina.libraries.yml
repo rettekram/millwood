@@ -1,0 +1,7 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+      css/marina-default-d7.css: {}
+      css/marina-style-d7.css: {}
+      css/style.css: {}

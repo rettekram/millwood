@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Marina theme.
+
+marina.settings:
+  type: theme_settings
+  label: 'Marina settings'

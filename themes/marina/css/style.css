@@ -1,0 +1,195 @@
+/**
+ *   Text styles
+ */
+.serif {
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+.sans-serif {
+  font-family: "Myriad Pro", "Myriad Web Pro Regular", "Lucida Grande", Geneva, Trebuchet MS, sans-serif;
+}
+/**
+ *  Containers
+ */
+.blue-region {
+  background-color: #2f76a5;
+  /* old browsers */
+  background-image: linear-gradient(top, #2f76a5 0%, #144a6e 100%);
+  /* w3c */
+  background-image: -o-linear-gradient(top, #2f76a5 0%, #144a6e 100%);
+  /* opera */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2f76a5), to(#144a6e));
+  /* webkit */
+  background-image: -moz-linear-gradient(top, #2f76a5 0%, #144a6e 100%);
+  /* firefox */
+  border-top: 3px solid #a7ce38;
+  color: #fff;
+  min-height: 24px;
+}
+.green-region {
+  background-color: #E4EDC2;
+  /* old browsers */
+  background-image: linear-gradient(top, #e4edc2 0%, #f5f7e7 55px);
+  /* w3c */
+  background-image: -o-linear-gradient(top, #e4edc2 0%, #f5f7e7 55px);
+  /* opera */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4edc2), to(#f5f7e7), color-stop(0%, #e4edc2), color-stop(10%, #f5f7e7));
+  /* webkit */
+  background-image: -moz-linear-gradient(top, #e4edc2 0%, #f5f7e7 55px);
+  /* firefox */
+  border-top: 2px solid #FFFFFF;
+}
+/**
+ *   HTML styles
+ */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+/**
+ *   Main containers
+ */
+#header-top {
+  background: #e1e1e1;
+  border-bottom: 1px solid #ccc;
+}
+#header {
+  background: #fff;
+}
+#preface-top {
+  background-color: #2f76a5;
+  /* old browsers */
+  background-image: linear-gradient(top, #2f76a5 0%, #144a6e 100%);
+  /* w3c */
+  background-image: -o-linear-gradient(top, #2f76a5 0%, #144a6e 100%);
+  /* opera */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2f76a5), to(#144a6e));
+  /* webkit */
+  background-image: -moz-linear-gradient(top, #2f76a5 0%, #144a6e 100%);
+  /* firefox */
+  border-top: 3px solid #a7ce38;
+  color: #fff;
+  min-height: 24px;
+  padding: 30px 0 0 0;
+}
+#main-wrapper {
+  background-color: #E4EDC2;
+  /* old browsers */
+  background-image: linear-gradient(top, #e4edc2 0%, #f5f7e7 55px);
+  /* w3c */
+  background-image: -o-linear-gradient(top, #e4edc2 0%, #f5f7e7 55px);
+  /* opera */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e4edc2), to(#f5f7e7), color-stop(0%, #e4edc2), color-stop(10%, #f5f7e7));
+  /* webkit */
+  background-image: -moz-linear-gradient(top, #e4edc2 0%, #f5f7e7 55px);
+  /* firefox */
+  border-top: 2px solid #FFFFFF;
+  padding: 40px 0 0 0;
+}
+#postscript-bottom {
+  background-color: #2f76a5;
+  /* old browsers */
+  background-image: linear-gradient(top, #2f76a5 0%, #144a6e 100%);
+  /* w3c */
+  background-image: -o-linear-gradient(top, #2f76a5 0%, #144a6e 100%);
+  /* opera */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2f76a5), to(#144a6e));
+  /* webkit */
+  background-image: -moz-linear-gradient(top, #2f76a5 0%, #144a6e 100%);
+  /* firefox */
+  border-top: 3px solid #a7ce38;
+  color: #fff;
+  min-height: 24px;
+  padding: 20px 0;
+}
+/**
+ *   Layout classes
+ */
+.container {
+  width: 960px;
+  margin: 0px auto;
+}
+/**
+ *   HTML styles
+ */
+body {
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+  background: #F4F7E7;
+  color: #666;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Myriad Pro", "Myriad Web Pro Regular", "Lucida Grande", Geneva, Trebuchet MS, sans-serif;
+}
+#page-wrapper a,
+#page-wrapper a:link,
+#page-wrapper a:visited {
+  color: #27638C;
+  text-decoration: none;
+}
+#page-wrapper a:hover,
+#page-wrapper a:focus,
+#page-wrapper a:active {
+  text-decoration: underline;
+}
+#page-wrapper h1 {
+  border-bottom: 1px solid #D6DDB9;
+  clear: left;
+  font-weight: bold;
+  line-height: 120%;
+  margin-bottom: 5px;
+}
+#page-wrapper h2 {
+  border-bottom: 1px solid #d6ddb9;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+#page-wrapper h2 a:hover,
+#page-wrapper h2 a:focus,
+#page-wrapper h2 a:active {
+  color: #619CBE;
+  text-decoration: none;
+}
+#page-wrapper ul {
+  margin: 0 0 10px 20px;
+}
+#page-wrapper ul ul {
+  margin: 5px 0 5px 10px;
+}
+#page-wrapper ul li {
+  background: url("../images/green-bullet.png") no-repeat 0 2px;
+  list-style: none;
+  list-style-image: none;
+  margin-bottom: 5px;
+  padding: 0 0 0 15px;
+}
+#page-wrapper ol {
+  margin: 0 0 10px 40px;
+}
+#page-wrapper ol ol {
+  margin: 5px 0 5px 10px;
+}
+#page-wrapper blockquote {
+  background: url("../images/close-quote.png") no-repeat 100% 100%;
+  color: #5A6A78;
+  margin: 10px 0;
+}
+#page-wrapper blockquote p {
+  font-style: italic;
+  margin: 0;
+  padding: 8px 20px;
+}
+#page-wrapper blockquote p:first-child {
+  background: url("../images/open-quote.png") no-repeat 0 100%;
+  padding: 0 0 0 20px;
+}
+#page-wrapper blockquote a:link {
+  text-decoration: underline;
+}
+#page-wrapper hr {
+  border: 1px solid #D6DDB9;
+}
