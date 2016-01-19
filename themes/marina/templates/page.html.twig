@@ -47,48 +47,41 @@
 #}
 <div id="page-wrapper">
   <div id="page">
-
     <div id="header-top" class="clearfix">
       <div class="container">
         page.header_top
         {{ page.header_top }}
       </div>
     </div>
-    
     <header id="header" class="clearfix">
       <div class="container">
         page.header
         {{ page.header }}
       </div>
     </header>
-    
     <div id="preface-top" class="clearfix">
       <div class="container">
         page.preface_top
         {{ page.preface_top }}
       </div>
     </div>
-    
     <div id="main-wrapper" class="clearfix">
       <div class="container">
-      
-        <div id="sidebar-first">
-          <aside class="sidebar">
+        <div id="sidebar-first" class="grid12-3">
+          <aside class="sidebar gutter">
             page.sidebar_first
             {{ page.sidebar_first }}
           </aside>
         </div>
-  
-        <div id="preface-bottom">
-          <div class="container">
+        <div id="preface-bottom" class="grid12-9">
+          <div class="container gutter">
             page.preface_bottom
             {{ page.preface_bottom }}
           </div>
         </div>
-      
-        <div id="main">
-          <main id="content">
-            <section class="section">
+        <div id="main" class="grid12-9">
+          <main id="content" class="grid12-6">
+            <section class="section gutter">
               page.help
               {{ page.help }}
               <a id="main-content" tabindex="-1"></a>
@@ -96,36 +89,31 @@
               {{ page.content }}
             </section>
           </main>
-          <div id="sidebar-second">
-            <aside class="sidebar">
+          <div id="sidebar-second" class="grid12-3">
+            <aside class="sidebar gutter">
               page.sidebar_second
               {{ page.sidebar_second }}
             </aside>
           </div>
-        </div> 
-      
-        <div id="postscript-top">
-          <div class="container">
-            page.postscript_top
-            {{ page.postscript_top }}
+          <div id="postscript-top" class="grid12-9">
+            <div class="container gutter">
+              page.postscript_top
+              {{ page.postscript_top }}
+            </div>
           </div>
-        </div>
-        
+        </div> 
       </div>
     </div>
-    
     <div id="postscript-bottom" class="clearfix">
       <div class="container">
         page.postscript_bottom
         {{ page.postscript_bottom }}
       </div>
     </div>
-    
     <footer id="footer">
       <div class="container">
         {{ page.footer }}
       </div>
     </footer>
-    
   </div>
 </div>
