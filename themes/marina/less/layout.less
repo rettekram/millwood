@@ -2,6 +2,7 @@
  *   HTML styles
  */
 body {
+  background: #F4F7E7;
   margin: 0px;
   padding: 0px;
 }
@@ -15,12 +16,9 @@ body {
   border-bottom: 1px solid #ccc;
 }
 
-#header {
-  background: #fff;
-}
-
+#header,
 #main-menu {
-  
+  background: #fff;
 }
 
 #preface-top {
@@ -28,34 +26,37 @@ body {
   padding: 30px 0 0 0;
 }
 
-#sidebar-first {
-  
-}
-
 #main-wrapper {
   .green-region;
   padding: 40px 0 0 0;
 }
 
-#preface-bottom {
-  
+#sidebar-first {
+  width: 240px;
+  float: left;
+  .sidebar {
+    padding-right: 10px;
+  }
 }
 
-#main {
-  
+#preface-bottom,
+#main,
+#postscript-top {
+  width: 720px;
+  float: left;
 }
 
-#help {
-  
+#content {
+  width: 480px;
+  float: left;
 }
 
 #sidebar-second {
-  
-}
-
-
-#postscript-first {
-  
+  width: 240px;
+  float: right;
+  .sidebar {
+    padding-left: 10px;
+  }
 }
 
 #postscript-bottom {
@@ -64,7 +65,6 @@ body {
 }
 
 #footer {
-  
 }
 
 
@@ -78,60 +78,39 @@ body {
 
 
 /**
- *   Grid styles
- * 
+ *   Variant layouts
  */
-
-/* Layout - 12 column grid, 960px fixed width, 20px gutters
--------------------------------------------------------------- */
-
-/* grid widths */
-.grid12-1 {width: 80px;}
-.grid12-2 {width: 160px;}
-.grid12-3 {width: 240px;}
-.grid12-4 {width: 320px;}
-.grid12-5 {width: 400px;}
-.grid12-6 {width: 480px;}
-.grid12-7 {width: 560px;}
-.grid12-8 {width: 640px;}
-.grid12-9 {width: 720px;}
-.grid12-10 {width: 800px;}
-.grid12-11 {width: 880px;}
-.grid12-12 {width: 960px;}
-
-/* block indents */
-.grid12-indent-1 {margin-left: 80px;}
-.grid12-indent-2 {margin-left: 160px;}
-.grid12-indent-3 {margin-left: 240px;}
-.grid12-indent-4 {margin-left: 320px;}
-.grid12-indent-5 {margin-left: 400px;}
-.grid12-indent-6 {margin-left: 480px;}
-.grid12-indent-7 {margin-left: 560px;}
-.grid12-indent-8 {margin-left: 640px;}
-.grid12-indent-9 {margin-left: 720px;}
-.grid12-indent-10 {margin-left: 800px;}
-.grid12-indent-11 {margin-left: 880px;}
-
-/* gutters (2 x margin) */
-.gutter {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-@media (min-width: 768px) {
-  .grid12-1,
-  .grid12-2,
-  .grid12-3,
-  .grid12-4,
-  .grid12-5,
-  .grid12-6,
-  .grid12-7,
-  .grid12-8,
-  .grid12-9,
-  .grid12-10,
-  .grid12-11,
-  .grid12-12 {
+.layout-sidebar-first {
+  #content {
+    width: 720px;
     float: left;
+  }
+  #sidebar-second {
+    display: none;
   }
 }
 
+
+/**
+ *   Mobile layouts
+ */
+@media (max-width: 767px) {
+  /* Phone */
+  #sidebar-first,
+  #preface-bottom,
+  #main,
+  #postscript-top,
+  #content,
+  #sidebar-second {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  /* Tablet */
+}
+@media (min-width: 992px) {
+  /* Laptop */
+}
+@media (min-width: 1200px) {
+  /* Desktop */
+}
