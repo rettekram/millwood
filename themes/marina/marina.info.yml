@@ -1,6 +1,6 @@
 core: 8.x
 type: theme
-base theme: false
+base theme: classy
 
 name: 'Marina'
 version: 8.x-1.0-dev

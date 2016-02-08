@@ -1,5 +1,5 @@
 /**
- *   HTML Styles
+ *   Typography
  */
 body {
   .serif;
@@ -11,25 +11,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #page-wrapper {
-
+  
   a, a:link, a:visited {
     color: #27638C;
     text-decoration: none;
   }
   a:hover, a:focus, a:active {
+    color: #619ec8;
     text-decoration: underline;
+  }
+  
+  p, li, th, td {
+   font-size: 13px; 
   }
   
   h1 {
     border-bottom: 1px solid #D6DDB9;
     clear: left;
     font-weight: bold;
-    line-height: 120%;
+    font-size: 22px;
+    line-height: 26px;
     margin-bottom: 5px;
   }
 
   h2 {
     border-bottom: 1px solid #d6ddb9;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -40,23 +47,41 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   ul {
-    margin: 0 0 10px 20px;
-    ul {
-      margin: 5px 0 5px 10px;
-    }
     li {
       background: url("../images/green-bullet.png") no-repeat 0 2px;
       list-style: none;
       list-style-image: none;
       margin-bottom: 5px;
-      padding: 0 0 0 15px;
+      padding: 0 0 0 14px;
+    }
+    ul {
+      margin: 5px 0 5px 10px;
     }
   }
-
   ol {
-    margin: 0 0 10px 40px;
     ol {
       margin: 5px 0 5px 10px;
+    }
+  }
+  ul, ol{
+    margin: 0px 0 10px 20px;
+    padding: 0;
+    &.links {
+      height: 14px;
+      margin: 10px 0;
+      li {
+        background: none;
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+    &.inline {
+      li {
+        float: left;
+        &:first-child {
+          padding: 0;
+        }
+      }
     }
   }
 
@@ -95,6 +120,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.path-frontpage {
+  h1 {
+    display: none;
+  }
+}
+
 #sidebar-first,
 #sidebar-second {
   h2 {
@@ -127,6 +158,7 @@ h1, h2, h3, h4, h5, h6 {
       float: left;
       display: block;
       position: relative;
+      font-size: 12px;
       margin: 0 4px 0 0;
       padding: 0;
       a {
@@ -134,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
         border: none;
         color: #154B70;
         display: block;
-        padding: 5px 10px 1px 10px;
+        padding: 5px 10px 5px 10px;
         text-decoration: none;
         border-radius: 5px 5px 0 0;
         -moz-border-radius: 5px 5px 0 0;
@@ -167,11 +199,122 @@ h1, h2, h3, h4, h5, h6 {
             #95cf1a 100%
             ); /* firefox */ 
           color: #fff;
+          text-decoration: none;
         }
       }
     }
   }
 } 
 
+
+/**
+ *   Breadcrumbs
+ */
+#block-marina-breadcrumbs {
+  height: 20px;
+  margin-bottom: 20px;
+  ol {
+    margin: 0px;
+    padding: 0px;
+    li {
+      float: left;
+      list-style: none;
+      font-size: 11px;
+      margin: 0px;
+      padding: 0px;
+      a {
+        
+      }
+    }
+  }
+}
+
+
+/**
+ *   Local Tasks
+ */
+#block-marina-local-tasks {
+  background-color: transparent;
+  height: 20px;
+  margin: 20px 0;
+  padding: 0;
+  ul {
+    border-bottom: 1px solid #bbb;
+    clear: both;
+    float: left;
+    margin: 0;
+    padding: 0 10px;
+    li {
+      background-image: none;
+      border-style: none;
+      display: inline;
+      float: left;
+      font-size: 13px;
+      font-weight: bold;
+      list-style: none;
+      text-decoration: none;
+      text-transform: uppercase;
+      white-space: nowrap;
+      margin: 0 10px;
+      padding: 0;
+      a {
+        color: #000;
+        float: right;
+        margin: 0;
+        padding: 0 0 6px 0;
+        &:hover,
+        &:active,
+        &.is-active {
+          border-bottom: 4px solid #94CE18;
+          color: #4A95C8;
+          text-decoration: none;
+          padding-bottom: 2px;
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ *   Fields
+ */
+.field--name-body {
+  border-bottom: 1px solid #D6DDB9;
+  margin-bottom: 6px;
+}
+
+.field--name-field-tags {
+  height: 14px;
+  font-size: 12px;
+  margin: 6px 0 12px;
+  .field__label {
+    float: left;
+    padding-right: 6px;
+    &:after {
+      content: ":";
+    }
+  }
+  .field__items {
+    float: left;
+    .field__item {
+      float: left;
+      padding-right: 6px;
+    }
+  }
+}
+
+
+/**
+ *   Page elements
+ */
+.node-submitted {
+  font-size: 11px;
+}
+
+.views-row,
+.feed-icons {
+  clear: both;
+}
 
 
