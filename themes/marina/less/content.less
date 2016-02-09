@@ -47,6 +47,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   ul {
+    margin: 0px 0 10px 20px;
+    padding: 0;
     li {
       background: url("../images/green-bullet.png") no-repeat 0 2px;
       list-style: none;
@@ -59,29 +61,10 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
   ol {
-    ol {
-      margin: 5px 0 5px 10px;
-    }
-  }
-  ul, ol{
     margin: 0px 0 10px 20px;
     padding: 0;
-    &.links {
-      height: 14px;
-      margin: 10px 0;
-      li {
-        background: none;
-        font-size: 12px;
-        font-weight: bold;
-      }
-    }
-    &.inline {
-      li {
-        float: left;
-        &:first-child {
-          padding: 0;
-        }
-      }
+    ol {
+      margin: 5px 0 5px 10px;
     }
   }
 
@@ -274,47 +257,3 @@ h1, h2, h3, h4, h5, h6 {
     }
   }
 }
-
-
-/**
- *   Fields
- */
-.field--name-body {
-  border-bottom: 1px solid #D6DDB9;
-  margin-bottom: 6px;
-}
-
-.field--name-field-tags {
-  height: 14px;
-  font-size: 12px;
-  margin: 6px 0 12px;
-  .field__label {
-    float: left;
-    padding-right: 6px;
-    &:after {
-      content: ":";
-    }
-  }
-  .field__items {
-    float: left;
-    .field__item {
-      float: left;
-      padding-right: 6px;
-    }
-  }
-}
-
-
-/**
- *   Page elements
- */
-.node-submitted {
-  font-size: 11px;
-}
-
-.views-row,
-.feed-icons {
-  clear: both;
-}
-
-

@@ -1,0 +1,89 @@
+/**
+ *   General Node Styles
+ */
+.node--sticky {
+  background-color: #EFF2E2;
+  border: 1px solid #E0E3D4;
+  padding: 8px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+.node__submitted {
+  font-size: 11px;
+}
+
+.node__links {
+  height: 14px;
+  ul {
+    margin: 10px 0;
+    &.links {
+      li {
+        background: none !important;
+        font-size: 12px !important;
+        font-weight: bold;
+      }
+    }
+    &.inline {
+      li {
+        float: left;
+        &:first-child {
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}      
+
+
+/**
+ *   Fields
+ */
+.node--view-mode-full {
+  .field--name-body {
+    border-bottom: 1px solid #D6DDB9;
+    margin-bottom: 6px;
+  }
+}
+
+.field--name-field-tags {
+  height: 14px;
+  font-size: 12px;
+  margin: 6px 0 12px;
+  .field__label {
+    float: left;
+    padding-right: 6px;
+    &:after {
+      content: ":";
+    }
+  }
+  .field__items {
+    float: left;
+    .field__item {
+      float: left;
+      padding-right: 6px;
+    }
+  }
+}
+
+
+/**
+ *   Article
+ */
+.node--type-article {
+  &.node--view-mode-teaser {
+    margin-bottom: 30px;
+    h2 {
+      margin: 0;
+    }
+  }
+}
+
+
+/**
+ *   Basic Page
+ */
+.node--type-article {
+  
+}
