@@ -75,13 +75,6 @@
     </div>
     <div id="main-wrapper" class="clearfix">
       <div class="container">
-        {% if page.sidebar_first %} 
-          <div id="sidebar-first">
-            <aside class="sidebar">
-              {{ page.sidebar_first }}
-            </aside>
-          </div>
-        {% endif %}
         {% if page.preface_bottom %} 
           <div id="preface-bottom">
             <div class="">
@@ -89,12 +82,16 @@
             </div>
           </div>
         {% endif %}
+        {% if page.sidebar_first %} 
+          <div id="sidebar-first">
+            <aside class="sidebar">
+              {{ page.sidebar_first }}
+            </aside>
+          </div>
+        {% endif %}
         <div id="main">
           <main id="content">
             <section>
-              {% if page.preface_bottom %} 
-                {{ page.preface_bottom }}
-              {% endif %}
               <a id="main-content" tabindex="-1"></a>
               {{ page.content }}
             </section>
